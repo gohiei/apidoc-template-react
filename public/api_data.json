@@ -1,0 +1,323 @@
+[
+  {
+    "type": "PUT",
+    "url": "/api/example1",
+    "title": "Example1",
+    "version": "1.0.0",
+    "group": "Example",
+    "name": "Example1",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "integer",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>ID</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "result",
+            "description": "<p>ok/error</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "object",
+            "optional": false,
+            "field": "ret",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "ret.id",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "ret.name",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n{\n  \"result\": \"ok\",\n  \"ret\": {\n    \"id\": 1,\n    \"name\": \"First api\"\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "path/to/example.js",
+    "groupTitle": "Example"
+  },
+  {
+    "type": "GET",
+    "url": "/api/example2",
+    "title": "Example2",
+    "version": "1.0.0",
+    "group": "Example",
+    "name": "Example2",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "integer",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>ID</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "result",
+            "description": "<p>ok/error</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "object",
+            "optional": false,
+            "field": "ret",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "ret.id",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "ret.name",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n{\n  \"result\": \"ok\",\n  \"ret\": {\n    \"id\": 1,\n    \"name\": \"First api\"\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "path/to/example.js",
+    "groupTitle": "Example"
+  },
+  {
+    "type": "DELETE",
+    "url": "/api/example3",
+    "title": "Example3",
+    "version": "1.0.0",
+    "group": "Example",
+    "name": "Example3",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "integer",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>ID</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "result",
+            "description": "<p>ok/error</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "object",
+            "optional": false,
+            "field": "ret",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "ret.id",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "ret.name",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n{\n  \"result\": \"ok\",\n  \"ret\": {\n    \"id\": 1,\n    \"name\": \"First api\"\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "path/to/example.js",
+    "groupTitle": "Example"
+  },
+  {
+    "type": "POST",
+    "url": "/api/example4",
+    "title": "Example4",
+    "version": "1.0.0",
+    "group": "2st Example",
+    "name": "Example4",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "integer",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>ID</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "result",
+            "description": "<p>ok/error</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "object",
+            "optional": false,
+            "field": "ret",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "ret.id",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "ret.name",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n{\n  \"result\": \"ok\",\n  \"ret\": {\n    \"id\": 1,\n    \"name\": \"First api\"\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "path/to/example.js",
+    "groupTitle": "2st Example"
+  },
+  {
+    "type": "POST",
+    "url": "/api/example5",
+    "title": "Example5",
+    "version": "1.0.0",
+    "group": "2st Example",
+    "name": "Example5",
+    "deprecated": true,
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "integer",
+            "optional": false,
+            "field": "activityId",
+            "description": "<p>ID</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "string",
+            "optional": false,
+            "field": "result",
+            "description": "<p>ok/error</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "object",
+            "optional": false,
+            "field": "ret",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "ret.id",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "number",
+            "optional": false,
+            "field": "ret.name",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n{\n  \"result\": \"ok\",\n  \"ret\": {\n    \"id\": 1,\n    \"name\": \"First api\"\n  }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "path/to/example.js",
+    "groupTitle": "2st Example"
+  }
+]

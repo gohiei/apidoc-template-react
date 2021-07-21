@@ -1,0 +1,38 @@
+html, body, #root, #root > div {
+  color: #404040;
+  font-size: 13px;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+#root > div {
+  margin-bottom: 0;
+}
+
+.pusher.main-content {
+  max-height: 100vh;
+  height: 100vh;
+  overflow: auto;
+}
+
+.pusher.main-content.wide {
+  max-width: 100%;
+}
+
+.pusher.main-content.fit {
+  max-width: calc(100% - 260px);
+}
+
+.ui.sidebar.menu {
+  max-height: 100vh;
+  height: 100vh !important;
+}
+
+.ui.form .disabled.field {
+  opacity: 0.9;
+}
+
+.readme-modal.ui.fullscreen.modal {
+  position: relative;
+  padding: 15px;
+}

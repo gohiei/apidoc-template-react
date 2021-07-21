@@ -1,0 +1,20 @@
+{
+  "name": "My Sample Api",
+  "version": "1.0.0",
+  "description": "",
+  "title": "Demo",
+  "url": "https://example.com",
+  "header": {
+    "title": "Readme",
+    "content": "Sample"
+  },
+  "sampleUrl": false,
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2021-07-21T03:19:47.120Z",
+    "url": "https://apidocjs.com",
+    "version": "0.27.1"
+  }
+}
