@@ -28,6 +28,12 @@ html, body, #root, #root > div {
   height: 100vh !important;
 }
 
+.ui.sidebar.menu > .item.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
 .ui.form .disabled.field {
   opacity: 0.9;
 }

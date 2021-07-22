@@ -550,11 +550,11 @@ function GroupMenu({ visible, activeApi, setActiveApi, hideReadme }) {
       visible={visible}
       inverted
     >
-      <Menu.Item>
+      <Menu.Item className='sticky'>
         <Input
           value={searchText}
           icon='search'
-          placeholder='Text'
+          placeholder='Search'
           onChange={(event) => setSearchText(event.target.value)}
         />
       </Menu.Item>
