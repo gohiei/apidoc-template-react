@@ -614,6 +614,13 @@ function MainContent({ activeApi: api, setActiveApi }) {
             />
           )}
 
+          {api.description && (
+            <Message
+              info
+              content={remove_html(api.description)}
+            />
+          )}
+
           {!!api.type && api.type.split('|').map(type => (<Label color={METHOD_COLORS[type]} content={type} />))}
 
           <Message className='method-url'>
@@ -775,6 +782,16 @@ function Notice({ prefix, msg }) {
  */
 function Tag({ content }) {
   return <Label basic color='red' size='mini' content={content} />;
+}
+
+/**
+ * A simple way to remove html
+ *
+ * @param {string} str
+ * @return {string}
+ */
+function remove_html(str) {
+  return str.replace(/<[^>]+>/g, '');
 }
 
 export default App;
