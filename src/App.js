@@ -571,7 +571,7 @@ function GroupMenu({ visible, activeApi, setActiveApi, hideReadme }) {
                   key={api.name}
                   id={`api-${group}-${api.name}`}
                   name={api.name}
-                  active={activeApi.name === api.name}
+                  active={(activeApi.name === api.name) && (activeApi.group === api.group)}
                   to={`#api-${group}-${api.name}`}
                 >
                     <Label className="icon" circular empty size='mini' color={METHOD_COLORS[api.type]} />
