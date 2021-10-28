@@ -627,6 +627,8 @@ function MainContent({ activeApi: api, setActiveApi }) {
             {api.url}
           </Message>
 
+          {api.examples && (<Example examples={api.examples} />)}
+
           <FieldTable
             name={'Header'}
             fieldName='Header'
