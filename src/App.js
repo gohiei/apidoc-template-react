@@ -4,6 +4,8 @@ import { BrowserRouter as Router, useLocation, Link } from 'react-router-dom';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import axios from 'axios';
 import qs from 'qs';
+import { Interweave } from 'interweave';
+
 import { a11yDark as dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import 'semantic-ui-css/semantic.min.css';
 import {
@@ -607,12 +609,7 @@ function MainContent({ activeApi: api, setActiveApi }) {
             subheader={api.version}
           />
 
-          {api.deprecated && (
-            <Message
-              color='red'
-              content={`Deprecated!!!` + (api.deprecated?.content ? `\n${api.deprecated.content}` : '')}
-            />
-          )}
+          <Deprecated data={api.deprecated} />
 
           {api.description && (
             <Message
@@ -794,6 +791,29 @@ function Tag({ content }) {
  */
 function remove_html(str) {
   return str.replace(/<[^>]+>/g, '');
+}
+
+/**
+ * Deprecated
+ */
+function Deprecated({ data }) {
+  if (!data) {
+    return <Divider hidden />;
+  }
+
+  const o = (
+    <Interweave
+      content={`Deprecated!!!` + (data?.content ? `\n${data.content}` : '')}
+      allowList={['a']}
+    />
+  );
+
+  return (
+    <Message
+      color='red'
+      content={o}
+    />
+  );
 }
 
 export default App;

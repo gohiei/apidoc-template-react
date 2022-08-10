@@ -262,7 +262,9 @@
     "version": "1.0.0",
     "group": "2st Example",
     "name": "Example5",
-    "deprecated": true,
+    "deprecated": {
+      "content": "請改用 <a href=\"#Withdraw:createAgentWithdraw\">{POST} /api/v1/c/agent_withdraw</a>"
+    },
     "parameter": {
       "fields": {
         "Parameter": [
